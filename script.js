@@ -4,13 +4,22 @@
   /* Mark that JS is alive (enables hide-until-reveal only when JS works) */
   document.documentElement.classList.add("js-ready");
 
-  /* One place to update your real Amazon storefront / ASIN URL */
-  const AMAZON_URL = "https://www.amazon.com";
+  /* Store not live yet — set STORE_LIVE = true + real AMAZON_URL when ready */
+  const STORE_LIVE = false;
+  const AMAZON_URL = "https://www.amazon.com"; /* paste storefront / ASIN here later */
+  const CTA_HREF = STORE_LIVE ? AMAZON_URL : "#contacto";
+
+  document.body.classList.toggle("store-soon", !STORE_LIVE);
+
   document.querySelectorAll(".js-amazon").forEach((el) => {
-    el.setAttribute("href", AMAZON_URL);
-    if (el.tagName === "A") {
+    if (el.tagName !== "A") return;
+    el.setAttribute("href", CTA_HREF);
+    if (STORE_LIVE) {
       el.setAttribute("target", "_blank");
       el.setAttribute("rel", "noopener noreferrer");
+    } else {
+      el.removeAttribute("target");
+      el.removeAttribute("rel");
     }
   });
 
