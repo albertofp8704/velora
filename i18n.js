@@ -9,7 +9,7 @@ const I18N = {
     "hero.title1": "Beauty",
     "hero.title2": "in motion",
     "hero.lead":
-      "Velora is the modern personal-care ritual: clean formulas, minimal design, and products that feel premium from the first unboxing.",
+      "Velora by Dayana is the modern personal-care ritual: clean formulas, minimal design, and products that feel premium from the first unboxing.",
     "hero.ctaProducts": "View products",
     "hero.ctaAmazon": "Go to Amazon",
     "stats.rating": "Avg. rating",
@@ -39,28 +39,28 @@ const I18N = {
     "exp.s3t": "Feel the difference",
     "exp.s3p": "Premium textures and packaging that elevate the unboxing.",
     "look.eyebrow": "Lookbook",
-    "look.title": "The Velora aesthetic",
+    "look.title": "The Velora by Dayana aesthetic",
     "look.c1": "Soft glam mornings",
     "look.c2": "Textures",
     "look.c3": "Flatlay studio",
     "look.c4": "Skin first · always",
     "cta.eyebrow": "Official store",
     "cta.title": "Bring Velora home",
-    "cta.lead": "Shop the full collection on Amazon with fast shipping and purchase protection.",
+    "cta.lead": "Shop the Velora by Dayana collection on Amazon with fast shipping and purchase protection.",
     "cta.btn": "Open Amazon store",
     "cta.hint": "Placeholder link — we replace it with your storefront or ASIN.",
     "footer.tag": "Premium personal care",
     "modal.desc": "Collection product. Swap this copy and photo for your real Amazon listing.",
     "modal.buy": "Buy on Amazon",
     "modal.close": "Close",
-    "img.serum": "Velora facial serum in glass bottle",
+    "img.serum": "Velora by Dayana facial serum in glass bottle",
     "img.cream": "Moisturizing cream",
     "img.glow": "Illuminating serum",
     "img.oil": "Body oil",
     "img.kit": "Beauty kit",
     "img.cleanse": "Facial cleanser",
     "img.balm": "Lip balm",
-    "img.ritual": "Velora skincare ritual",
+    "img.ritual": "Velora by Dayana skincare ritual",
   },
   es: {
     "nav.products": "Productos",
@@ -72,7 +72,7 @@ const I18N = {
     "hero.title1": "Belleza",
     "hero.title2": "en movimiento",
     "hero.lead":
-      "Velora es el ritual moderno de cuidado personal: fórmulas limpias, diseño minimal y productos que se sienten premium desde el unboxing.",
+      "Velora by Dayana es el ritual moderno de cuidado personal: fórmulas limpias, diseño minimal y productos que se sienten premium desde el unboxing.",
     "hero.ctaProducts": "Ver productos",
     "hero.ctaAmazon": "Ir a Amazon",
     "stats.rating": "Rating medio",
@@ -102,28 +102,28 @@ const I18N = {
     "exp.s3t": "Siente la diferencia",
     "exp.s3p": "Texturas premium y packaging que eleva el unboxing.",
     "look.eyebrow": "Lookbook",
-    "look.title": "La estética Velora",
+    "look.title": "La estética Velora by Dayana",
     "look.c1": "Mañanas soft glam",
     "look.c2": "Texturas",
     "look.c3": "Flatlay studio",
     "look.c4": "Skin first · always",
     "cta.eyebrow": "Tienda oficial",
     "cta.title": "Lleva Velora a casa",
-    "cta.lead": "Compra la colección completa en Amazon con envío rápido y compra protegida.",
+    "cta.lead": "Compra la colección Velora by Dayana en Amazon con envío rápido y compra protegida.",
     "cta.btn": "Abrir tienda Amazon",
     "cta.hint": "Enlace provisional — lo cambiamos por tu storefront o ASIN.",
     "footer.tag": "Cuidado personal premium",
     "modal.desc": "Producto de la colección. Sustituye este texto y la foto por tu listing real de Amazon.",
     "modal.buy": "Comprar en Amazon",
     "modal.close": "Cerrar",
-    "img.serum": "Serum facial Velora en envase de cristal",
+    "img.serum": "Serum facial Velora by Dayana en envase de cristal",
     "img.cream": "Crema hidratante",
     "img.glow": "Serum iluminador",
     "img.oil": "Aceite corporal",
     "img.kit": "Kit de belleza",
     "img.cleanse": "Limpiador facial",
     "img.balm": "Bálsamo labial",
-    "img.ritual": "Ritual de skincare Velora",
+    "img.ritual": "Ritual de skincare Velora by Dayana",
   },
 };
 
@@ -166,7 +166,9 @@ function setLang(lang) {
   });
 
   document.title =
-    lang === "es" ? "Velora — Rituales de belleza modernos" : "Velora — Modern Beauty Rituals";
+    lang === "es"
+      ? "Velora by Dayana — Rituales de belleza modernos"
+      : "Velora by Dayana — Modern Beauty Rituals";
 }
 
 window.VeloraI18n = { getLang, setLang, I18N };

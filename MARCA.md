@@ -1,8 +1,14 @@
-# Velora — marca
+# Velora by Dayana — marca
 
 ## Concepto
-**Velora** = cuidado personal premium, minimal y confiable.  
+**Velora** = marca de cuidado personal premium, minimal y confiable.  
+**by Dayana** = firma personal de la fundadora / rostro de la marca.  
 Menos ruido, más ritual. Productos esenciales de belleza y bienestar, vendidos en Amazon.
+
+## Nombre oficial
+**Velora by Dayana**  
+- Logo principal: **Velora**  
+- Subtítulo: **by Dayana** (dorado, uppercase, pequeño)
 
 ## Personalidad
 - Premium sin arrogancia
