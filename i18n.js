@@ -2,6 +2,7 @@ const I18N = {
   en: {
     "nav.products": "Products",
     "nav.experience": "Experience",
+    "nav.founder": "Dayana",
     "nav.lookbook": "Lookbook",
     "nav.shop": "Shop",
     "nav.menu": "Menu",
@@ -39,6 +40,13 @@ const I18N = {
     "exp.s2p": "Secure checkout, fast shipping, and clear returns.",
     "exp.s3t": "Feel the difference",
     "exp.s3p": "Premium textures and packaging that elevate the unboxing.",
+    "founder.eyebrow": "Founder",
+    "founder.title": "Crafted with care<br /><em>by Dayana</em>",
+    "founder.lead":
+      "Velora was born from a simple idea: beauty should feel calm, honest, and elevated — every single day. Dayana selects each essential with a clear standard: quality you can feel, design you love, and rituals worth repeating.",
+    "founder.quote":
+      "“Less noise. More presence. Products that respect your skin and your time.”",
+    "founder.cta": "Shop the collection",
     "look.eyebrow": "Lookbook",
     "look.title": "The Velora by Dayana aesthetic",
     "look.c1": "by Dayana",
@@ -68,6 +76,7 @@ const I18N = {
   es: {
     "nav.products": "Productos",
     "nav.experience": "Experiencia",
+    "nav.founder": "Dayana",
     "nav.lookbook": "Lookbook",
     "nav.shop": "Comprar",
     "nav.menu": "Menú",
@@ -105,6 +114,13 @@ const I18N = {
     "exp.s2p": "Pago seguro, envío rápido y devoluciones claras.",
     "exp.s3t": "Siente la diferencia",
     "exp.s3p": "Texturas premium y packaging que eleva el unboxing.",
+    "founder.eyebrow": "Fundadora",
+    "founder.title": "Creado con cariño<br /><em>by Dayana</em>",
+    "founder.lead":
+      "Velora nació de una idea simple: la belleza debe sentirse calmada, honesta y elevada — cada día. Dayana elige cada esencial con un criterio claro: calidad que se siente, diseño que enamora y rituales que valen la pena repetir.",
+    "founder.quote":
+      "“Menos ruido. Más presencia. Productos que respetan tu piel y tu tiempo.”",
+    "founder.cta": "Ver la colección",
     "look.eyebrow": "Lookbook",
     "look.title": "La estética Velora by Dayana",
     "look.c1": "by Dayana",

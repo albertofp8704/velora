@@ -934,6 +934,90 @@ html.js-ready .reveal.in {
   font-weight: 300;
 }
 
+/* Founder */
+.founder {
+  padding-top: 2rem;
+}
+
+.founder-layout {
+  display: grid;
+  gap: 2rem;
+  align-items: center;
+}
+
+@media (min-width: 900px) {
+  .founder-layout {
+    grid-template-columns: 0.95fr 1.05fr;
+    gap: 3rem;
+  }
+}
+
+.founder-photo {
+  border-radius: 28px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  aspect-ratio: 4 / 5;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.4);
+}
+
+.founder-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1s var(--ease);
+}
+
+.founder-photo:hover img {
+  transform: scale(1.04);
+}
+
+.founder-copy h2 {
+  margin: 0;
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: clamp(2.2rem, 4.5vw, 3.3rem);
+  line-height: 1.1;
+}
+
+.founder-copy h2 em {
+  font-style: italic;
+  color: var(--gold);
+}
+
+.founder-lead {
+  margin: 1.25rem 0 0;
+  color: var(--muted);
+  font-weight: 300;
+  font-size: 1.02rem;
+  max-width: 34rem;
+}
+
+.founder-quote {
+  margin: 1.75rem 0 0;
+  padding: 1.15rem 1.25rem;
+  border-left: 2px solid var(--gold);
+  background: rgba(232, 201, 160, 0.05);
+  border-radius: 0 14px 14px 0;
+  font-family: var(--display);
+  font-size: 1.25rem;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--text);
+}
+
+.founder-sign {
+  margin: 0.85rem 0 0;
+  font-size: 0.85rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 500;
+}
+
+.founder-copy .btn {
+  margin-top: 1.75rem;
+}
+
 /* Bento lookbook */
 .bento {
   display: grid;
