@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Velora — premium personal care. Modern beauty rituals with curated products for skin, hair, and wellness." />
+  <meta name="theme-color" content="#0c0b0a" />
+  <title>Velora — Modern Beauty Rituals</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230c0b0a'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia' font-size='15' fill='%23e8c9a0'%3EV%3C/text%3E%3C/svg%3E" />
+  <noscript>
+    <style>.reveal { opacity: 1 !important; transform: none !important; }</style>
+  </noscript>
+</head>
+<body>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"><div class="progress-bar"></div></div>
+
+  <header class="header">
+    <a class="logo" href="#top">
+      <span class="logo-dot"></span>
+      Velora
+    </a>
+    <div class="header-right">
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" class="lang-btn is-active" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" class="lang-btn" data-lang="es" aria-pressed="false">ES</button>
+      </div>
+      <nav class="nav" id="nav">
+        <a href="#productos" data-i18n="nav.products">Products</a>
+        <a href="#experiencia" data-i18n="nav.experience">Experience</a>
+        <a href="#lookbook" data-i18n="nav.lookbook">Lookbook</a>
+        <a href="#amazon" class="nav-pill" data-i18n="nav.shop">Shop</a>
+      </nav>
+      <button class="burger" type="button" data-i18n-aria="nav.menu" aria-label="Menu" aria-expanded="false">
+        <i></i><i></i>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-bg">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+      </div>
+
+      <div class="hero-grid">
+        <div class="hero-copy reveal">
+          <div class="chip">
+            <span class="chip-pulse"></span>
+            <span data-i18n="hero.chip">New collection · Amazon</span>
+          </div>
+          <h1>
+            <span data-i18n="hero.title1">Beauty</span><br />
+            <span class="gradient-text" data-i18n="hero.title2">in motion</span>
+          </h1>
+          <p class="lead" data-i18n="hero.lead">
+            Velora is the modern personal-care ritual: clean formulas, minimal design, and products that feel premium from the first unboxing.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-solid" href="#productos">
+              <span data-i18n="hero.ctaProducts">View products</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a class="btn btn-line" href="#amazon" data-i18n="hero.ctaAmazon">Go to Amazon</a>
+          </div>
+          <div class="stats">
+            <div class="stat">
+              <strong data-count="4.8">0</strong>
+              <span data-i18n="stats.rating">Avg. rating</span>
+            </div>
+            <div class="stat">
+              <strong data-count="1200" data-suffix="+">0</strong>
+              <span data-i18n="stats.orders">Orders</span>
+            </div>
+            <div class="stat">
+              <strong data-count="48" data-suffix="h">0</strong>
+              <span data-i18n="stats.shipping">Typical shipping</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-stage reveal" data-delay="120">
+          <div class="stage-card float">
+            <img
+              src="https://images.unsplash.com/photo-1612817288484-6f916006741a?auto=format&fit=crop&w=900&q=80"
+              alt="Velora facial serum in glass bottle"
+              width="900"
+              height="1100"
+              loading="eager"
+              data-i18n-alt="img.serum"
+            />
+            <div class="stage-badge">
+              <span data-i18n="hero.bestseller">Bestseller</span>
+              <strong>Glow Serum 30ml</strong>
+            </div>
+          </div>
+          <div class="mini-card float-delay">
+            <img
+              src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=400&q=80"
+              alt="Moisturizing cream"
+              width="200"
+              height="200"
+              loading="lazy"
+              data-i18n-alt="img.cream"
+            />
+            <div>
+              <small data-i18n="hero.skin">Skin</small>
+              <strong>Cloud Cream</strong>
+            </div>
+          </div>
+          <div class="rating-pill float-slow">
+            <div class="stars" aria-hidden="true">★★★★★</div>
+            <span data-i18n="hero.loved">Loved by 1.2k+ customers</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>Clean formulas</span><span>·</span>
+          <span>Minimal design</span><span>·</span>
+          <span>Amazon ready</span><span>·</span>
+          <span>Daily rituals</span><span>·</span>
+          <span>Premium feel</span><span>·</span>
+          <span>Clean formulas</span><span>·</span>
+          <span>Minimal design</span><span>·</span>
+          <span>Amazon ready</span><span>·</span>
+          <span>Daily rituals</span><span>·</span>
+          <span>Premium feel</span><span>·</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="productos">
+      <div class="section-head reveal">
+        <p class="eyebrow" data-i18n="products.eyebrow">Collection</p>
+        <h2 data-i18n-html="products.title">Products that look as good<br />as they feel</h2>
+        <p class="section-sub" data-i18n="products.sub">Style-reference photos — we’ll swap them for your real Amazon product shots.</p>
+      </div>
+
+      <div class="product-grid">
+        <article class="product reveal" data-delay="0">
+          <div class="product-media">
+            <img src="https://images.unsplash.com/photo-1620916297397-a4a5402a3c6c?auto=format&fit=crop&w=800&q=80" alt="Illuminating serum" loading="lazy" data-i18n-alt="img.glow" />
+            <button class="quick" type="button" data-product="Glow Serum" data-i18n="products.quick">Quick view</button>
+            <span class="tag">Top</span>
+          </div>
+          <div class="product-info">
+            <div>
+              <h3>Glow Serum</h3>
+              <p data-i18n="p.glow">Vitamin C · daily glow</p>
+            </div>
+            <div class="price">
+              <strong>$24.99</strong>
+              <a class="buy" href="#amazon" data-i18n="products.amazon">Amazon →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product reveal" data-delay="80">
+          <div class="product-media">
+            <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&q=80" alt="Moisturizing cream" loading="lazy" data-i18n-alt="img.cream" />
+            <button class="quick" type="button" data-product="Cloud Cream" data-i18n="products.quick">Quick view</button>
+          </div>
+          <div class="product-info">
+            <div>
+              <h3>Cloud Cream</h3>
+              <p data-i18n="p.cloud">Light 24h hydration</p>
+            </div>
+            <div class="price">
+              <strong>$19.90</strong>
+              <a class="buy" href="#amazon" data-i18n="products.amazon">Amazon →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product reveal" data-delay="160">
+          <div class="product-media">
+            <img src="https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&w=800&q=80" alt="Body oil" loading="lazy" data-i18n-alt="img.oil" />
+            <button class="quick" type="button" data-product="Silk Body Oil" data-i18n="products.quick">Quick view</button>
+            <span class="tag tag-new">New</span>
+          </div>
+          <div class="product-info">
+            <div>
+              <h3>Silk Body Oil</h3>
+              <p data-i18n="p.oil">Nourish + body glow</p>
+            </div>
+            <div class="price">
+              <strong>$22.50</strong>
+              <a class="buy" href="#amazon" data-i18n="products.amazon">Amazon →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product reveal" data-delay="240">
+          <div class="product-media">
+            <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=800&q=80" alt="Beauty kit" loading="lazy" data-i18n-alt="img.kit" />
+            <button class="quick" type="button" data-product="Morning Kit" data-i18n="products.quick">Quick view</button>
+          </div>
+          <div class="product-info">
+            <div>
+              <h3>Morning Kit</h3>
+              <p data-i18n="p.kit">Full AM ritual</p>
+            </div>
+            <div class="price">
+              <strong>$49.00</strong>
+              <a class="buy" href="#amazon" data-i18n="products.amazon">Amazon →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product reveal" data-delay="80">
+          <div class="product-media">
+            <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=800&q=80" alt="Facial cleanser" loading="lazy" data-i18n-alt="img.cleanse" />
+            <button class="quick" type="button" data-product="Soft Cleanse" data-i18n="products.quick">Quick view</button>
+          </div>
+          <div class="product-info">
+            <div>
+              <h3>Soft Cleanse</h3>
+              <p data-i18n="p.cleanse">Gentle daily cleanse</p>
+            </div>
+            <div class="price">
+              <strong>$16.90</strong>
+              <a class="buy" href="#amazon" data-i18n="products.amazon">Amazon →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product reveal" data-delay="160">
+          <div class="product-media">
+            <img src="https://images.unsplash.com/photo-1580870069867-74c57ee1bb07?auto=format&fit=crop&w=800&q=80" alt="Lip balm" loading="lazy" data-i18n-alt="img.balm" />
+            <button class="quick" type="button" data-product="Velvet Balm" data-i18n="products.quick">Quick view</button>
+            <span class="tag">Pick</span>
+          </div>
+          <div class="product-info">
+            <div>
+              <h3>Velvet Balm</h3>
+              <p data-i18n="p.balm">Soft-matte lips</p>
+            </div>
+            <div class="price">
+              <strong>$12.95</strong>
+              <a class="buy" href="#amazon" data-i18n="products.amazon">Amazon →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section experience" id="experiencia">
+      <div class="exp-layout">
+        <div class="exp-visual reveal">
+          <img
+            src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=1000&q=80"
+            alt="Velora skincare ritual"
+            loading="lazy"
+            data-i18n-alt="img.ritual"
+          />
+          <div class="exp-float glass">
+            <span data-i18n="exp.stepsLabel">03 steps</span>
+            <strong>Clean · Treat · Seal</strong>
+          </div>
+        </div>
+        <div class="exp-copy reveal" data-delay="100">
+          <p class="eyebrow" data-i18n="exp.eyebrow">Experience</p>
+          <h2 data-i18n-html="exp.title">A modern ritual,<br />not a heavy routine</h2>
+          <div class="steps">
+            <div class="step">
+              <span class="step-n">01</span>
+              <div>
+                <h3 data-i18n="exp.s1t">Pick your essential</h3>
+                <p data-i18n="exp.s1p">Skin, hair, or wellness. We start with what you use every day.</p>
+              </div>
+            </div>
+            <div class="step">
+              <span class="step-n">02</span>
+              <div>
+                <h3 data-i18n="exp.s2t">Shop on Amazon</h3>
+                <p data-i18n="exp.s2p">Secure checkout, fast shipping, and clear returns.</p>
+              </div>
+            </div>
+            <div class="step">
+              <span class="step-n">03</span>
+              <div>
+                <h3 data-i18n="exp.s3t">Feel the difference</h3>
+                <p data-i18n="exp.s3p">Premium textures and packaging that elevate the unboxing.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="lookbook">
+      <div class="section-head reveal">
+        <p class="eyebrow" data-i18n="look.eyebrow">Lookbook</p>
+        <h2 data-i18n="look.title">The Velora aesthetic</h2>
+      </div>
+      <div class="bento">
+        <figure class="bento-item tall reveal">
+          <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=900&q=80" alt="Makeup and skincare" loading="lazy" />
+          <figcaption data-i18n="look.c1">Soft glam mornings</figcaption>
+        </figure>
+        <figure class="bento-item reveal" data-delay="80">
+          <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=800&q=80" alt="Cream textures" loading="lazy" />
+          <figcaption data-i18n="look.c2">Textures</figcaption>
+        </figure>
+        <figure class="bento-item reveal" data-delay="140">
+          <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=800&q=80" alt="Beauty flatlay" loading="lazy" />
+          <figcaption data-i18n="look.c3">Flatlay studio</figcaption>
+        </figure>
+        <figure class="bento-item wide reveal" data-delay="100">
+          <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=1200&q=80" alt="Facial care" loading="lazy" />
+          <figcaption data-i18n="look.c4">Skin first · always</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="cta-section" id="amazon">
+      <div class="cta-card reveal">
+        <div class="cta-glow"></div>
+        <p class="eyebrow" data-i18n="cta.eyebrow">Official store</p>
+        <h2 data-i18n="cta.title">Bring Velora home</h2>
+        <p data-i18n="cta.lead">Shop the full collection on Amazon with fast shipping and purchase protection.</p>
+        <a class="btn btn-solid btn-lg" href="https://www.amazon.com" target="_blank" rel="noopener noreferrer" id="amazon-link">
+          <span data-i18n="cta.btn">Open Amazon store</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <p class="hint" data-i18n="cta.hint">Placeholder link — we replace it with your storefront or ASIN.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <a class="logo" href="#top"><span class="logo-dot"></span>Velora</a>
+      <div class="footer-links">
+        <a href="#productos" data-i18n="nav.products">Products</a>
+        <a href="#experiencia" data-i18n="nav.experience">Experience</a>
+        <a href="#lookbook" data-i18n="nav.lookbook">Lookbook</a>
+        <a href="#amazon">Amazon</a>
+      </div>
+    </div>
+    <p class="copy">© <span id="year"></span> Velora · <span data-i18n="footer.tag">Premium personal care</span></p>
+  </footer>
+
+  <div class="modal" id="modal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" type="button" data-close aria-label="Close" data-i18n-aria="modal.close">×</button>
+      <div class="modal-media">
+        <img id="modal-img" src="" alt="" />
+      </div>
+      <div class="modal-body">
+        <p class="eyebrow">Velora</p>
+        <h3 id="modal-title"></h3>
+        <p id="modal-desc" data-i18n="modal.desc">Collection product. Swap this copy and photo for your real Amazon listing.</p>
+        <a class="btn btn-solid" href="#amazon" data-close data-i18n="modal.buy">Buy on Amazon</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
