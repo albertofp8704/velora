@@ -28,7 +28,7 @@ const I18N = {
     "products.title": "Products that look as good<br />as they feel",
     "products.sub": "Style-reference photos — we’ll swap them for your real Amazon product shots.",
     "products.quick": "Quick view",
-    "products.amazon": "Amazon →",
+    "products.amazon": "Soon →",
     "p.glow": "Vitamin C · daily glow",
     "p.cloud": "Light 24h hydration",
     "p.oil": "Nourish + body glow",
