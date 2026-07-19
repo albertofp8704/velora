@@ -939,36 +939,27 @@ html.js-ready .reveal.in {
   padding-top: 2rem;
 }
 
-.founder-layout {
-  display: grid;
-  gap: 2rem;
-  align-items: center;
+.founder-copy-solo {
+  max-width: 40rem;
+  margin: 0 auto;
+  text-align: center;
 }
 
-@media (min-width: 900px) {
-  .founder-layout {
-    grid-template-columns: 0.95fr 1.05fr;
-    gap: 3rem;
-  }
+.founder-copy-solo .founder-lead {
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.founder-photo {
-  border-radius: 28px;
-  overflow: hidden;
-  border: 1px solid var(--line);
-  aspect-ratio: 4 / 5;
-  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.4);
+.founder-copy-solo .founder-quote {
+  text-align: left;
+  max-width: 34rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.founder-photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 1s var(--ease);
-}
-
-.founder-photo:hover img {
-  transform: scale(1.04);
+.founder-copy-solo .btn {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .founder-copy h2 {
