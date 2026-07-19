@@ -1178,13 +1178,35 @@ html.js-ready .reveal.in {
   border-radius: 20px;
   overflow: hidden;
   aspect-ratio: 1;
-  background: var(--bg-soft);
+  max-height: min(420px, 70vw);
+  margin-inline: auto;
+  width: 100%;
+  background:
+    radial-gradient(circle at 50% 40%, rgba(232, 201, 160, 0.12), transparent 55%),
+    var(--bg-soft);
+  display: grid;
+  place-items: center;
 }
 
 .star-media img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: center;
+  padding: 1.25rem;
+  box-sizing: border-box;
+}
+
+@media (min-width: 860px) {
+  .star-media {
+    max-height: 480px;
+  }
+
+  .star-media img {
+    padding: 1.75rem;
+  }
 }
 
 .star-copy h2 {
