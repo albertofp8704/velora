@@ -4,6 +4,16 @@
   /* Mark that JS is alive (enables hide-until-reveal only when JS works) */
   document.documentElement.classList.add("js-ready");
 
+  /* One place to update your real Amazon storefront / ASIN URL */
+  const AMAZON_URL = "https://www.amazon.com";
+  document.querySelectorAll(".js-amazon").forEach((el) => {
+    el.setAttribute("href", AMAZON_URL);
+    if (el.tagName === "A") {
+      el.setAttribute("target", "_blank");
+      el.setAttribute("rel", "noopener noreferrer");
+    }
+  });
+
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = String(new Date().getFullYear());
 
@@ -168,5 +178,31 @@
 
   window.addEventListener("keydown", (e) => {
     if (e.key === "Escape") closeModal();
+  });
+
+  /* Sticky mobile CTA after scrolling past hero */
+  const sticky = document.getElementById("sticky-cta");
+  if (sticky) {
+    const showSticky = () => {
+      const y = window.scrollY || 0;
+      const show = y > 420;
+      sticky.classList.toggle("is-visible", show);
+      sticky.hidden = !show;
+      document.body.classList.toggle("has-sticky", show);
+    };
+    sticky.hidden = true;
+    window.addEventListener("scroll", showSticky, { passive: true });
+    showSticky();
+  }
+
+  /* FAQ: only one open at a time (cleaner on mobile) */
+  const faqItems = document.querySelectorAll(".faq-item");
+  faqItems.forEach((item) => {
+    item.addEventListener("toggle", () => {
+      if (!item.open) return;
+      faqItems.forEach((other) => {
+        if (other !== item) other.open = false;
+      });
+    });
   });
 })();

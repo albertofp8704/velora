@@ -40,11 +40,12 @@
         <button type="button" class="lang-btn" data-lang="es" aria-pressed="false">ES</button>
       </div>
       <nav class="nav" id="nav">
+        <a href="#star" data-i18n="nav.star">Bestseller</a>
         <a href="#productos" data-i18n="nav.products">Products</a>
-        <a href="#experiencia" data-i18n="nav.experience">Experience</a>
-        <a href="#dayana" data-i18n="nav.founder">Dayana</a>
-        <a href="#lookbook" data-i18n="nav.lookbook">Lookbook</a>
-        <a href="#amazon" class="nav-pill" data-i18n="nav.shop">Shop</a>
+        <a href="#reviews" data-i18n="nav.reviews">Reviews</a>
+        <a href="#faq" data-i18n="nav.faq">FAQ</a>
+        <a href="#contacto" data-i18n="nav.contact">Contact</a>
+        <a href="#amazon" class="nav-pill js-amazon" data-i18n="nav.shop" target="_blank" rel="noopener noreferrer">Shop</a>
       </nav>
       <button class="burger" type="button" data-i18n-aria="nav.menu" aria-label="Menu" aria-expanded="false">
         <i></i><i></i>
@@ -78,7 +79,7 @@
               <span data-i18n="hero.ctaProducts">View products</span>
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
-            <a class="btn btn-line" href="#amazon" data-i18n="hero.ctaAmazon">Go to Amazon</a>
+            <a class="btn btn-line js-amazon" href="https://www.amazon.com" target="_blank" rel="noopener noreferrer" data-i18n="hero.ctaAmazon">Go to Amazon</a>
           </div>
           <div class="stats">
             <div class="stat">
@@ -148,6 +149,47 @@
       </div>
     </section>
 
+    <!-- STAR PRODUCT -->
+    <section class="section star" id="star">
+      <div class="star-card reveal">
+        <div class="star-media">
+          <img
+            src="https://images.unsplash.com/photo-1620916297397-a4a5402a3c6c?auto=format&fit=crop&w=900&q=80"
+            alt="Glow Serum"
+            loading="lazy"
+            data-i18n-alt="img.glow"
+          />
+          <span class="tag">Top</span>
+        </div>
+        <div class="star-copy">
+          <p class="eyebrow" data-i18n="star.eyebrow">Hero product</p>
+          <h2>Glow Serum</h2>
+          <div class="star-meta">
+            <div class="stars" aria-hidden="true">★★★★★</div>
+            <span data-i18n="star.rating">4.8 · 320+ reviews</span>
+          </div>
+          <p class="star-desc" data-i18n="star.desc">
+            Our #1 essential: lightweight vitamin C serum for daily glow. Clean feel, fast absorb, premium glass bottle.
+          </p>
+          <ul class="star-bullets">
+            <li data-i18n="star.b1">Brightens dull skin</li>
+            <li data-i18n="star.b2">Morning ritual ready</li>
+            <li data-i18n="star.b3">Ships with Amazon</li>
+          </ul>
+          <div class="star-price-row">
+            <div>
+              <strong class="star-price">$24.99</strong>
+              <span class="star-was">$29.99</span>
+            </div>
+            <a class="btn btn-solid js-amazon" href="https://www.amazon.com" target="_blank" rel="noopener noreferrer" data-i18n="star.cta">
+              Buy on Amazon
+            </a>
+          </div>
+          <p class="star-note" data-i18n="star.note">Replace this link with your real ASIN when ready.</p>
+        </div>
+      </div>
+    </section>
+
     <section class="section" id="productos">
       <div class="section-head reveal">
         <p class="eyebrow" data-i18n="products.eyebrow">Collection</p>
@@ -169,7 +211,7 @@
             </div>
             <div class="price">
               <strong>$24.99</strong>
-              <a class="buy" href="#amazon" data-i18n="products.amazon">Amazon →</a>
+              <a class="buy js-amazon" href="https://www.amazon.com" target="_blank" rel="noopener noreferrer" data-i18n="products.amazon">Amazon →</a>
             </div>
           </div>
         </article>
@@ -186,7 +228,7 @@
             </div>
             <div class="price">
               <strong>$19.90</strong>
-              <a class="buy" href="#amazon" data-i18n="products.amazon">Amazon →</a>
+              <a class="buy js-amazon" href="https://www.amazon.com" target="_blank" rel="noopener noreferrer" data-i18n="products.amazon">Amazon →</a>
             </div>
           </div>
         </article>
@@ -204,7 +246,7 @@
             </div>
             <div class="price">
               <strong>$22.50</strong>
-              <a class="buy" href="#amazon" data-i18n="products.amazon">Amazon →</a>
+              <a class="buy js-amazon" href="https://www.amazon.com" target="_blank" rel="noopener noreferrer" data-i18n="products.amazon">Amazon →</a>
             </div>
           </div>
         </article>
@@ -221,7 +263,7 @@
             </div>
             <div class="price">
               <strong>$49.00</strong>
-              <a class="buy" href="#amazon" data-i18n="products.amazon">Amazon →</a>
+              <a class="buy js-amazon" href="https://www.amazon.com" target="_blank" rel="noopener noreferrer" data-i18n="products.amazon">Amazon →</a>
             </div>
           </div>
         </article>
@@ -238,7 +280,7 @@
             </div>
             <div class="price">
               <strong>$16.90</strong>
-              <a class="buy" href="#amazon" data-i18n="products.amazon">Amazon →</a>
+              <a class="buy js-amazon" href="https://www.amazon.com" target="_blank" rel="noopener noreferrer" data-i18n="products.amazon">Amazon →</a>
             </div>
           </div>
         </article>
@@ -256,7 +298,7 @@
             </div>
             <div class="price">
               <strong>$12.95</strong>
-              <a class="buy" href="#amazon" data-i18n="products.amazon">Amazon →</a>
+              <a class="buy js-amazon" href="https://www.amazon.com" target="_blank" rel="noopener noreferrer" data-i18n="products.amazon">Amazon →</a>
             </div>
           </div>
         </article>
@@ -318,7 +360,7 @@
           “Less noise. More presence. Products that respect your skin and your time.”
         </blockquote>
         <p class="founder-sign">Dayana</p>
-        <a class="btn btn-line" href="#amazon" data-i18n="founder.cta">Shop the collection</a>
+        <a class="btn btn-line js-amazon" href="https://www.amazon.com" target="_blank" rel="noopener noreferrer" data-i18n="founder.cta">Shop the collection</a>
       </div>
     </section>
 
@@ -347,13 +389,94 @@
       </div>
     </section>
 
+    <!-- REVIEWS -->
+    <section class="section" id="reviews">
+      <div class="section-head reveal">
+        <p class="eyebrow" data-i18n="reviews.eyebrow">Love notes</p>
+        <h2 data-i18n="reviews.title">What customers say</h2>
+        <p class="section-sub" data-i18n="reviews.sub">Sample reviews for layout — swap with real Amazon feedback when you have it.</p>
+      </div>
+      <div class="reviews-grid">
+        <article class="review reveal">
+          <div class="stars" aria-hidden="true">★★★★★</div>
+          <p data-i18n="reviews.r1t">“Soft, clean, and actually feels premium. My morning routine is simpler now.”</p>
+          <footer>
+            <strong>Maya R.</strong>
+            <span data-i18n="reviews.verified">Verified Amazon purchase</span>
+          </footer>
+        </article>
+        <article class="review reveal" data-delay="80">
+          <div class="stars" aria-hidden="true">★★★★★</div>
+          <p data-i18n="reviews.r2t">“Packaging is beautiful and the serum absorbs fast. Already reordered.”</p>
+          <footer>
+            <strong>Sofia L.</strong>
+            <span data-i18n="reviews.verified">Verified Amazon purchase</span>
+          </footer>
+        </article>
+        <article class="review reveal" data-delay="160">
+          <div class="stars" aria-hidden="true">★★★★☆</div>
+          <p data-i18n="reviews.r3t">“Great texture, subtle scent. Shipping was quick through Amazon.”</p>
+          <footer>
+            <strong>Elena M.</strong>
+            <span data-i18n="reviews.verified">Verified Amazon purchase</span>
+          </footer>
+        </article>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="section-head reveal">
+        <p class="eyebrow" data-i18n="faq.eyebrow">FAQ</p>
+        <h2 data-i18n="faq.title">Questions, answered</h2>
+      </div>
+      <div class="faq-list reveal">
+        <details class="faq-item" open>
+          <summary data-i18n="faq.q1">Is this the official Velora store?</summary>
+          <p data-i18n="faq.a1">Yes. Velora by Dayana is our brand. Products are sold through Amazon for secure checkout, fast shipping, and easy returns.</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="faq.q2">Where do you ship?</summary>
+          <p data-i18n="faq.a2">Shipping follows Amazon’s network and your marketplace (US and other regions depending on the listing). Delivery times show at checkout.</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="faq.q3">Can I return a product?</summary>
+          <p data-i18n="faq.a3">Returns are handled by Amazon’s return policy for eligible items. You’ll find the return option in your Amazon order page.</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="faq.q4">Are products suitable for sensitive skin?</summary>
+          <p data-i18n="faq.a4">Many customers with sensitive skin enjoy our essentials, but always patch-test and check the full ingredient list on the Amazon listing. Not medical advice.</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="faq.q5">How do I contact you?</summary>
+          <p data-i18n="faq.a5">Use the contact section below or email us. For order issues, Amazon support is usually fastest.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contacto">
+      <div class="contact-card reveal">
+        <div>
+          <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
+          <h2 data-i18n="contact.title">We’re here</h2>
+          <p class="section-sub" data-i18n="contact.lead">Brand questions, collabs, or wholesale interest — send a note.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="btn btn-solid" href="mailto:hola@velora.example?subject=Velora%20by%20Dayana" data-i18n="contact.email">Email Dayana’s team</a>
+          <a class="btn btn-line js-amazon" href="https://www.amazon.com" target="_blank" rel="noopener noreferrer" data-i18n="contact.amazon">Shop on Amazon</a>
+        </div>
+        <p class="contact-hint" data-i18n="contact.hint">Replace hola@velora.example with your real email when ready.</p>
+      </div>
+    </section>
+
     <section class="cta-section" id="amazon">
       <div class="cta-card reveal">
         <div class="cta-glow"></div>
         <p class="eyebrow" data-i18n="cta.eyebrow">Official store</p>
         <h2 data-i18n="cta.title">Bring Velora home</h2>
         <p data-i18n="cta.lead">Shop the full collection on Amazon with fast shipping and purchase protection.</p>
-        <a class="btn btn-solid btn-lg" href="https://www.amazon.com" target="_blank" rel="noopener noreferrer" id="amazon-link">
+        <a class="btn btn-solid btn-lg js-amazon" href="https://www.amazon.com" target="_blank" rel="noopener noreferrer" id="amazon-link">
           <span data-i18n="cta.btn">Open Amazon store</span>
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
@@ -372,14 +495,27 @@
         </span>
       </a>
       <div class="footer-links">
-        <a href="#productos" data-i18n="nav.products">Products</a>
-        <a href="#dayana" data-i18n="nav.founder">Dayana</a>
-        <a href="#lookbook" data-i18n="nav.lookbook">Lookbook</a>
-        <a href="#amazon">Amazon</a>
+        <a href="#star" data-i18n="nav.star">Bestseller</a>
+        <a href="#reviews" data-i18n="nav.reviews">Reviews</a>
+        <a href="#faq" data-i18n="nav.faq">FAQ</a>
+        <a href="#contacto" data-i18n="nav.contact">Contact</a>
+        <a class="js-amazon" href="https://www.amazon.com" target="_blank" rel="noopener noreferrer">Amazon</a>
       </div>
     </div>
     <p class="copy">© <span id="year"></span> Velora by Dayana · <span data-i18n="footer.tag">Premium personal care</span></p>
+    <p class="copy footer-legal" data-i18n="footer.legal">Results vary. Not medical advice. Purchases processed by Amazon.</p>
   </footer>
+
+  <!-- Sticky mobile CTA -->
+  <div class="sticky-cta" id="sticky-cta" hidden>
+    <div class="sticky-cta-inner">
+      <div class="sticky-cta-info">
+        <strong>Glow Serum</strong>
+        <span>$24.99 · Amazon</span>
+      </div>
+      <a class="btn btn-solid js-amazon" href="https://www.amazon.com" target="_blank" rel="noopener noreferrer" data-i18n="sticky.cta">Shop now</a>
+    </div>
+  </div>
 
   <div class="modal" id="modal" hidden>
     <div class="modal-backdrop" data-close></div>
@@ -392,7 +528,7 @@
         <p class="eyebrow">Velora <span class="by-inline">by Dayana</span></p>
         <h3 id="modal-title"></h3>
         <p id="modal-desc" data-i18n="modal.desc">Collection product. Swap this copy and photo for your real Amazon listing.</p>
-        <a class="btn btn-solid" href="#amazon" data-close data-i18n="modal.buy">Buy on Amazon</a>
+        <a class="btn btn-solid js-amazon" href="https://www.amazon.com" target="_blank" rel="noopener noreferrer" data-close data-i18n="modal.buy">Buy on Amazon</a>
       </div>
     </div>
   </div>
